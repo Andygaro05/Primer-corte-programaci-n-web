@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Función Trigonométrica y Racional</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Función Trigonométrica y Racional</h1>
+        <p>Andrés Felipe Londoño | Código estudiantil: 2216683</p>
+    </header>
+
+    <main id="app">
+        <div class="imagen">
+            <img src="ecuacion.png" alt="Ecuación de la función" class="img-ecuacion">
+        </div>
+
+        <section class="coefficients">
+            <h2>Coeficientes</h2>
+            <div class="input-group">
+                <label for="a">A:</label>
+                <input type="number" id="a" value="1">
+            </div>
+            <div class="input-group">
+                <label for="b">B:</label>
+                <input type="number" id="b" value="1">
+            </div>
+            <div class="input-group">
+                <label for="c">C:</label>
+                <input type="number" id="c" value="1">
+            </div>
+            <div class="input-group">
+                <label for="d">D:</label>
+                <input type="number" id="d" value="1">
+            </div>
+            <div class="input-group">
+                <label for="e">E:</label>
+                <input type="number" id="e" value="1">
+            </div>
+        </section>
+
+        <section class="values">
+            <h2>Valores X</h2>
+            <div class="input-group">
+                <label for="minX">Mínimo:</label>
+                <input type="number" id="minX" value="-5">
+            </div>
+            <div class="input-group">
+                <label for="maxX">Máximo:</label>
+                <input type="number" id="maxX" value="5">
+            </div>
+            <button id="procesar">Procesar >></button>
+        </section>
+
+        <section id="resultados">
+            <h2>Resultados</h2>
+            <p>Valor Y Mínimo: <span id="yMin"></span></p>
+            <p>Valor Y Máximo: <span id="yMax"></span></p>
+            <p>Cortes detectados: <span id="cortes"></span></p>
+        </section>
+
+        <div id="chart_div"></div>
+
+        <div id="tabulacion">
+            <section>
+                <h2>Tabulación de Valores</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>X</th>
+                            <th>Y</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaDatos"></tbody>
+                </table>
+            </section>
+            
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
